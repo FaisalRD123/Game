@@ -18,5 +18,8 @@ window.onload = function () {  /* Function for putting images on the screen */
 function selectOption() {
     me = this.id;
     document.getElementById('my-option').src = me + '.png';
-    
+
+    /* Math.Floor to get a whole number */
+    rival = options[Math.floor(Math.random() * 3)];
+    document.getElementById('rival-option').src = rival + '.png';  // 
 }
