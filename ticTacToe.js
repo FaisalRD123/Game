@@ -10,3 +10,11 @@ let finished = false;
 window.onload = function () {
     setGame();
 }
+
+// Creating the basic ticTacToe structure
+function setGame() {
+    panel = [
+               [' ', ' ', ' '],
+               [' ', ' ', ' '],
+               [' ', ' ', ' '] 
+            ]
