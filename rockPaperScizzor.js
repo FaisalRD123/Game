@@ -48,4 +48,8 @@ function selectOption() {
             rivalPoint++;
         }
      }
+
+    /* Converting points to text */
+    document.getElementById('my-points').innerText = myPoint;
+    document.getElementById('rival-points').innerText = rivalPoint;
 }
