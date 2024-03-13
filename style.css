@@ -54,4 +54,9 @@ a:hover {
     height: 500px;
     width: 500px;
 
+    /* To make it center */
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
 }
