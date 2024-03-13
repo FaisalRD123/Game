@@ -79,3 +79,15 @@ function win() {     /* Horizantal win condition */
         }
 
     }
+
+    for (let j = 0; j < 3; j++) {    /* Vertical win condition */
+    if (panel[0][j] == panel[1][j] && panel[1][j] == panel[2][j] && panel[0][j] != ' ') {
+        for (let k =0; k < 3; k++) {
+            let tile = document.getElementById(k.toString() + '-' + j.toString());  
+            tile.classList.add('winner');           
+        }
+        finished = true;  /* Game over */
+        return;
+    }
+
+}
