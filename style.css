@@ -12,3 +12,8 @@ img{
     width: 200px;
     border-radius: 180px;
 }
+
+a:hover {
+    background-color: #7560df;
+    color: white;
+  }
