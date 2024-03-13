@@ -70,3 +70,11 @@ a:hover {
     justify-content: center;
     align-items: center;
 }
+
+.horizontal-line {
+    border-bottom: 3px solid black;
+}
+
+.vertical-line {
+    border-right: 3px solid black;  
+}
