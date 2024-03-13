@@ -58,5 +58,15 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
+}
 
+.tile {
+    height: 150px;
+    width: 150px;
+    font-size: 100px;
+
+    /* To make it center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
