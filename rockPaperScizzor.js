@@ -14,3 +14,9 @@ window.onload = function () {  /* Function for putting images on the screen */
         document.getElementById('options').append(option); /* Appending options */
     }
 }
+
+function selectOption() {
+    me = this.id;
+    document.getElementById('my-option').src = me + '.png';
+    
+}
