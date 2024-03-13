@@ -18,3 +18,10 @@ a:hover {
     color: white;
   }
 
+/* Rock Paper Scizzor Game */
+
+#my-option, #rival-option{
+    height: 150px;
+    width: 150px;
+    margin-top: 20px;  
+}
