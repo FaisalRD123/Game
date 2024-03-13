@@ -53,3 +53,13 @@ let j = parseInt(press[1]);  /* Column */
 if (panel[i][j] != ' ') {
     return;   /* Checking to see if the spot is empty */
 }
+
+panel[i][j] = player;  /* Updating the game after click */
+this.innerText = player;
+
+/* Changing players */
+if (player == player1) {
+    player = player2;
+} else {
+    player = player1;
+}
