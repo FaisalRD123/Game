@@ -24,3 +24,10 @@ function setGame() {
         let tile = document.createElement('div');
         tile.id = i.toString() + '-' + j.toString();   /* Creating a div element woth all the board numbers starting from 0-0 */
         tile.classList.add('tile');
+
+        if ( i == 0 || i == 1) {
+            tile.classList.add('horizontal-line');  /* Adding horizantal line */
+        }
+        if ( j == 0 || j == 1) {
+            tile.classList.add('vertical-line');  /* Adding vertical line */
+        }
