@@ -81,22 +81,38 @@ function win() {     /* Horizantal win condition */
     }
 
     for (let j = 0; j < 3; j++) {    /* Vertical win condition */
-    if (panel[0][j] == panel[1][j] && panel[1][j] == panel[2][j] && panel[0][j] != ' ') {
-        for (let k =0; k < 3; k++) {
+      if (panel[0][j] == panel[1][j] && panel[1][j] == panel[2][j] && panel[0][j] != ' ') {
+          for (let k =0; k < 3; k++) {
             let tile = document.getElementById(k.toString() + '-' + j.toString());  
             tile.classList.add('winner');           
-        }
-        finished = true;  /* Game over */
-        return;
+          }
+          finished = true;  /* Game over */
+          return;
+      }
     }
 
-}
-
-if (panel[0][0] == panel[1][1] && panel[1][1] == panel[2][2] && panel[0][0] != ' ') { 
-    for (let k = 0; k<=2; k++) {  /* Diagonal win condition from left to right */
-        let tile = document.getElementById(k.toString() + '-' + k.toString());
-        tile.classList.add('winner');           
+    if (panel[0][0] == panel[1][1] && panel[1][1] == panel[2][2] && panel[0][0] != ' ') { 
+      for (let k = 0; k<=2; k++) {  /* Diagonal win condition from left to right */
+          let tile = document.getElementById(k.toString() + '-' + k.toString());
+          tile.classList.add('winner');           
+      }
+      finished = true;  /* Game over */
+      return;
     }
-    finished = true;  /* Game over */
-    return;
-}
+
+   /* Diagonal win condition from right to left */
+    if (panel[0][2] == panel[1][1] && panel[1][1] == panel[2][0] && panel[0][2] != ' ') {
+      let tile = document.getElementById('0-2');
+      tile.classList.add('winner');  
+    
+      tile = document.getElementById('1-1');
+      tile.classList.add('winner'); 
+
+      tile = document.getElementById('2-0');
+      tile.classList.add('winner'); 
+
+      finished = true;  /* Game over */
+      return;
+      }
+
+    }
