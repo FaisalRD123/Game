@@ -8,5 +8,9 @@ window.onload = function () {  /* Function for putting images on the screen */
         let option = document.createElement('img');
         option.id = options[i];
         option.src = options[i] + '.png';
+
+        /* To append on clicking */
+        option.addEventListener('click', selectOption);
+        document.getElementById('options').append(option); /* Appending options */
     }
 }
