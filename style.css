@@ -25,3 +25,12 @@ a:hover {
     width: 150px;
     margin-top: 20px;  
 }
+
+/* Initially giving them background color to make it recognizable*/
+#my-option {
+    background-color: yellow; 
+}
+
+#rival-option {
+    background-color: red;
+}
