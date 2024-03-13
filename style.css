@@ -34,3 +34,8 @@ a:hover {
 #rival-option {
     background-color: red;
 }
+
+#options {
+    height: 100px;
+    width: 300px;
+}
