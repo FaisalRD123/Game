@@ -39,3 +39,9 @@ function setGame() {
     }
 }
 }
+
+function pressed() {
+    if (finished) {
+        return;
+    }
+}
