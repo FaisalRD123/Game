@@ -41,3 +41,9 @@ a:hover {
     margin-top: 20px;
     margin: 0 auto;
 }
+
+#options img {
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+}
