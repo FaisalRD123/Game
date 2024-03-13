@@ -44,8 +44,7 @@ function pressed() {
     if (finished) {
         return;
     }
-}
-
+    
 let press = this.id.split('-');
 let i = parseInt(press[0]); /* Row */
 let j = parseInt(press[1]);  /* Column */
@@ -62,4 +61,8 @@ if (player == player1) {
     player = player2;
 } else {
     player = player1;
+}
+
+win(); /* Win function to see if we have winner */
+
 }
