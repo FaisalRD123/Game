@@ -31,3 +31,11 @@ function setGame() {
         if ( j == 0 || j == 1) {
             tile.classList.add('vertical-line');  /* Adding vertical line */
         }
+
+        tile.innerText = '';
+        tile.addEventListener('click', pressed);
+        document.getElementById('panel').appendChild(tile); /* Appending div to panel ID on the main page */
+
+    }
+}
+}
