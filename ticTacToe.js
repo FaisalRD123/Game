@@ -45,3 +45,11 @@ function pressed() {
         return;
     }
 }
+
+let press = this.id.split('-');
+let i = parseInt(press[0]); /* Row */
+let j = parseInt(press[1]);  /* Column */
+
+if (panel[i][j] != ' ') {
+    return;   /* Checking to see if the spot is empty */
+}
