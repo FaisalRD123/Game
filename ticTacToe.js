@@ -44,7 +44,7 @@ function pressed() {
     if (finished) {
         return;
     }
-    
+
 let press = this.id.split('-');
 let i = parseInt(press[0]); /* Row */
 let j = parseInt(press[1]);  /* Column */
@@ -64,5 +64,18 @@ if (player == player1) {
 }
 
 win(); /* Win function to see if we have winner */
-
 }
+
+/* Win condition */
+function win() {     /* Horizantal win condition */
+    for (let i = 0; i < 3; i++) {
+        if (panel[i][0] == panel[i][1] && panel[i][1] == panel[i][2] && panel[i][0] != ' ') {
+            for (let k = 0; k < 3; k++) {
+                let tile = document.getElementById(i.toString() + '-' + k.toString());  
+                tile.classList.add('winner');           
+            }
+            finished = true;   /* Game over */
+            return;
+        }
+
+    }
