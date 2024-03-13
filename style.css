@@ -47,3 +47,11 @@ a:hover {
     width: 100px;
     background-color: blueviolet;
 }
+
+/* Tic Tac Toe Game */
+
+#panel {
+    height: 500px;
+    width: 500px;
+
+}
