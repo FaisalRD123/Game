@@ -18,6 +18,11 @@ a:hover {
     color: white;
   }
 
+#game2 {
+   margin-top: 40px;
+}
+
+
 /* Rock Paper Scizzor Game */
 
 #my-option, #rival-option{
