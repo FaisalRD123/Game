@@ -21,5 +21,31 @@ function selectOption() {
 
     /* Math.Floor to get a whole number */
     rival = options[Math.floor(Math.random() * 3)];
-    document.getElementById('rival-option').src = rival + '.png';  // 
+    document.getElementById('rival-option').src = rival + '.png';
+
+     /* Game logic */
+     if (me == 'paper') {
+        if (rival == 'rock'){
+            myPoint++;
+        }
+        else if (rival == 'scizzor') {
+            rivalPoint++;
+        }
+     }
+     else if (me == 'rock') {
+        if (rival == 'scizzor'){
+            myPoint++;
+        }
+        else if (rival == 'paper') {
+            rivalPoint++;
+        }
+     }
+     else if (me == 'scizzor') {
+        if (rival == 'paper'){
+            myPoint++;
+        }
+        else if (rival == 'rock') {
+            rivalPoint++;
+        }
+     }
 }
