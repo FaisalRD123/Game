@@ -91,3 +91,12 @@ function win() {     /* Horizantal win condition */
     }
 
 }
+
+if (panel[0][0] == panel[1][1] && panel[1][1] == panel[2][2] && panel[0][0] != ' ') { 
+    for (let k = 0; k<=2; k++) {  /* Diagonal win condition from left to right */
+        let tile = document.getElementById(k.toString() + '-' + k.toString());
+        tile.classList.add('winner');           
+    }
+    finished = true;  /* Game over */
+    return;
+}
