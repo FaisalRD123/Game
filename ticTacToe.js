@@ -1,118 +1,98 @@
-// Tic Tac Toe Java Script code
+let boxes = document.querySelectorAll(".box");
+let resetBtn = document.querySelector("#reset-btn");
+let newGameBtn = document.querySelector("#new-btn");
+let msgContainer = document.querySelector(".msg-container");
+let msg = document.querySelector("#msg");
 
-let panel;
-let player1 = 'O';
-let player2 = 'X';
-let player = player1;
-let finished = false;
+let turnO = true; //playerX, playerO
+let count = 0; //To Track Draw
 
-// On launching the page
-window.onload = function () {
-    setGame();
-}
+const winPatterns = [
+  [0, 1, 2],
+  [0, 3, 6],
+  [0, 4, 8],
+  [1, 4, 7],
+  [2, 5, 8],
+  [2, 4, 6],
+  [3, 4, 5],
+  [6, 7, 8],
+];
 
-// Creating the basic ticTacToe structure
-function setGame() {
-    panel = [
-               [' ', ' ', ' '],
-               [' ', ' ', ' '],
-               [' ', ' ', ' '] 
-            ]
-    for (let i = 0; i < 3; i++) {     /* Row loop */
-    for (let j = 0; j < 3; j++) {   /* Column loop */
-                
-        let tile = document.createElement('div');
-        tile.id = i.toString() + '-' + j.toString();   /* Creating a div element woth all the board numbers starting from 0-0 */
-        tile.classList.add('tile');
+const resetGame = () => {
+  turnO = true;
+  count = 0;
+  enableBoxes();
+  msgContainer.classList.add("hide");
+};
 
-        if ( i == 0 || i == 1) {
-            tile.classList.add('horizontal-line');  /* Adding horizantal line */
-        }
-        if ( j == 0 || j == 1) {
-            tile.classList.add('vertical-line');  /* Adding vertical line */
-        }
-
-        tile.innerText = '';
-        tile.addEventListener('click', pressed);
-        document.getElementById('panel').appendChild(tile); /* Appending div to panel ID on the main page */
-
+boxes.forEach((box) => {
+  box.addEventListener("click", () => {
+    if (turnO) {
+      //playerO
+      box.innerText = "O";
+      turnO = false;
+    } else {
+      //playerX
+      box.innerText = "X";
+      turnO = true;
     }
-}
-}
+    box.disabled = true;
+    count++;
 
-function pressed() {
-    if (finished) {
-        return;
+    let isWinner = checkWinner();
+
+    if (count === 9 && !isWinner) {
+      gameDraw();
     }
+  });
+});
 
-let press = this.id.split('-');
-let i = parseInt(press[0]); /* Row */
-let j = parseInt(press[1]);  /* Column */
+//Draw Game condition
+const gameDraw = () => {
+  msg.innerText = `Game was a Draw.`;
+  msgContainer.classList.remove("hide");
+  disableBoxes();
+};
 
-if (panel[i][j] != ' ') {
-    return;   /* Checking to see if the spot is empty */
-}
+// Disable boxes once you click on them
+const disableBoxes = () => {
+  for (let box of boxes) {
+    box.disabled = true;
+  }
+};
 
-panel[i][j] = player;  /* Updating the game after click */
-this.innerText = player;
 
-/* Changing players */
-if (player == player1) {
-    player = player2;
-} else {
-    player = player1;
-}
+const enableBoxes = () => {
+  for (let box of boxes) {
+    box.disabled = false;
+    box.innerText = "";
+  }
+};
 
-win(); /* Win function to see if we have winner */
-}
+// Winner announced
+const showWinner = (winner) => {
+  msg.innerText = `Congratulations, Winner is ${winner}`;
+  msgContainer.classList.remove("hide");
+  disableBoxes();
+};
 
-/* Win condition */
-function win() {     /* Horizantal win condition */
-    for (let i = 0; i < 3; i++) {
-        if (panel[i][0] == panel[i][1] && panel[i][1] == panel[i][2] && panel[i][0] != ' ') {
-            for (let k = 0; k < 3; k++) {
-                let tile = document.getElementById(i.toString() + '-' + k.toString());  
-                tile.classList.add('winner');           
-            }
-            finished = true;   /* Game over */
-            return;
-        }
 
-    }
+// Winner condition
+const checkWinner = () => {
+  for (let pattern of winPatterns) {
+    let pos1Val = boxes[pattern[0]].innerText;
+    let pos2Val = boxes[pattern[1]].innerText;
+    let pos3Val = boxes[pattern[2]].innerText;
 
-    for (let j = 0; j < 3; j++) {    /* Vertical win condition */
-      if (panel[0][j] == panel[1][j] && panel[1][j] == panel[2][j] && panel[0][j] != ' ') {
-          for (let k =0; k < 3; k++) {
-            let tile = document.getElementById(k.toString() + '-' + j.toString());  
-            tile.classList.add('winner');           
-          }
-          finished = true;  /* Game over */
-          return;
+    if (pos1Val != "" && pos2Val != "" && pos3Val != "") {
+      if (pos1Val === pos2Val && pos2Val === pos3Val) {
+        showWinner(pos1Val);
+        return true;
       }
     }
+  }
+};
 
-    if (panel[0][0] == panel[1][1] && panel[1][1] == panel[2][2] && panel[0][0] != ' ') { 
-      for (let k = 0; k<=2; k++) {  /* Diagonal win condition from left to right */
-          let tile = document.getElementById(k.toString() + '-' + k.toString());
-          tile.classList.add('winner');           
-      }
-      finished = true;  /* Game over */
-      return;
-    }
-
-   /* Diagonal win condition from right to left */
-    if (panel[0][2] == panel[1][1] && panel[1][1] == panel[2][0] && panel[0][2] != ' ') {
-      let tile = document.getElementById('0-2');
-      tile.classList.add('winner');  
-    
-      tile = document.getElementById('1-1');
-      tile.classList.add('winner'); 
-
-      tile = document.getElementById('2-0');
-      tile.classList.add('winner'); 
-
-      finished = true;  /* Game over */
-      return;
-      }
-
-    }
+// New game on reset
+newGameBtn.addEventListener("click", resetGame);
+resetBtn.addEventListener("click", resetGame);
