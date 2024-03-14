@@ -1,6 +1,3 @@
-/* Google fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
-
 body {
     text-align: center;
     font-weight: bold;
@@ -12,29 +9,43 @@ img{
     width: 200px;
     border-radius: 180px;
 }
-
-a:hover {
-    background-color: #7560df;
-    color: white;
-  }
-
-#game2 {
-   margin-top: 40px;
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+h1
+{
+    
+        font-family: "Madimi One", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 3em;
+        border: 10px solid black;
+        color: white;
+}
+h2
+{
+    font-family: "Madimi One", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 1.5em;
 }
 
+
+
+#game2 {
+    margin-top: 40px;
+}
 
 /* Rock Paper Scizzor Game */
 
 #my-option, #rival-option{
     height: 150px;
     width: 150px;
-    margin-top: 20px;  
+    margin-top: 20px;
+    
 }
-
-/* Initially giving them background color to make it recognizable*/
 #my-option {
     background-color: yellow; 
 }
+
 
 #rival-option {
     background-color: red;
@@ -78,13 +89,82 @@ a:hover {
 
 .horizontal-line {
     border-bottom: 3px solid black;
+
 }
 
 .vertical-line {
-    border-right: 3px solid black;  
+    border-right: 3px solid black;
+    
 }
 
 .winner {
     color: blue;
     background-color: cyan;
+}
+a>img:hover
+{
+    cursor: pointer;
+    border: 4px solid rgb(251, 255, 0);
+}
+.color-change-2x {
+	-webkit-animation: color-change-2x 2s linear infinite alternate both;
+	        animation: color-change-2x 2s linear infinite alternate both;
+}
+ @-webkit-keyframes color-change-2x {
+    0% {
+      background: #19dcea;
+    }
+    100% {
+      background: #b22cff;
+    }
+  }
+  @keyframes color-change-2x {
+    0% {
+      background: #19dcea;
+    }
+    100% {
+      background: #b22cff;
+    }
+  }
+  
+
+  /* Footer */
+footer, #footer {  
+    background-color: #d1f80f;
+    border: 3px solid black;
+    border-radius: 5%;
+}
+
+footer {
+    margin-top: 5px;
+}
+
+#footer {
+    margin-top: 75px;
+}
+
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#social-networks i>a {
+    font-size: 250%;
+    padding: 5%;
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+a {
+    color: black;
+    font-family: "Grape Nuts", cursive;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: all 0.5s ease;
 }
