@@ -1,126 +1,101 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');  /* Importing google fonts */
 
 body {
-  background-color: #548687;
-  text-align: center;
+    text-align: center;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
 }
-@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Oswald:wght@200..700&display=swap');
+
+img{
+    height: 200px;
+    width: 200px;
+    border-radius: 180px;
+}
+
 h1
 {
-  
+    
+        font-family: "Madimi One", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 3em;
+        border: 10px solid black;
+        color: white;
+}
+h2
+{
     font-family: "Madimi One", sans-serif;
-    font-weight: 800;
-    font-style: normal;
-    font-size: 3em;
-    border: 4px solid rgb(212, 202, 202);
+        font-weight: 500;
+        font-style: normal;
+        font-size: 1.5em;
+}
+
+
+a>img:hover
+{
+    cursor: pointer;
+    border: 4px solid rgb(251, 255, 0);
+}
+.color-change-2x {
+	-webkit-animation: color-change-2x 2s linear infinite alternate both;
+	        animation: color-change-2x 2s linear infinite alternate both;
+}
+ @-webkit-keyframes color-change-2x {
+    0% {
+      background: #19dcea;
+    }
+    100% {
+      background: #b22cff;
+    }
+  }
+  @keyframes color-change-2x {
+    0% {
+      background: #19dcea;
+    }
+    100% {
+      background: #b22cff;
+    }
+  }
   
+
+  /* Footer */
+footer, #footer {  
+    background-color: #d1f80f;
+    border: 3px solid black;
+    border-radius: 5%;
 }
 
-.container {
-  height: 70vh;
-  display: flex;
-
-  justify-content: center;
-  align-items: center;
+footer {
+    margin-top: 5px;
 }
 
-.game {
-  height: 60vmin;
-  width: 60vmin;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5vmin;
+#footer {
+    margin-top: 75px;
 }
 
-.box {
-  height: 18vmin;
-  width: 18vmin;
-  border-radius: 1rem;
-  border: none;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
-  font-size: 8vmin;
-  color: #b0413e;
-  background-color: #ffffc7;
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
 }
 
-#reset-btn {
-  padding: 1rem;
-  font-size: 1.25rem;
-  background-color: #191913;
-  color: #dd0b0b;
-  border-radius: 1rem;
-  border: none;
+#social-networks i>a {
+    font-size: 250%;
+    padding: 5%;
+    color: #ffffff;
+    opacity: 0.8;
 }
 
-#new-btn {
-  padding: 1rem;
-  font-size: 1.25rem;
-  background-color: #191913;
-  color: #fff;
-  border-radius: 1rem;
-  border: none;
-}
-
-#msg {
-  color: #ffffc7;
-  font-size: 5vmin;
-}
-
-.msg-container {
-  height: 100vmin;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 4rem;
-}
-
-.hide {
-  display: none;
-}
-#reset-btn:hover
-{
-  border: 3px solid white;
-}
-#reset-btn:active
-{
-  background-color: white;
-  color: #191913;
-}
-
-button {
-  /* Variables */
-  --button_radius: 0.75em;
-  --button_color: #e41010;
-  --button_outline_color: #000000;
-  font-size: 17px;
-  font-weight: bold;
-  border: none;
-  border-radius: var(--button_radius);
-  background: var(--button_outline_color);
-}
-
-.button_top {
-  padding: 1rem;
-  font-size: 1.25rem;
-  background-color: #191913;
-  color: #ec0707;
-  border-radius: 1rem;
-  border: none;
-}
-
-a
-{
-  color: #000000;
-  text-decoration: none;
-}
-a:active
-{
-  color: red;
+a {
+    color: black;
+    font-family: "Grape Nuts", cursive;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: all 0.5s ease;
 }
 
