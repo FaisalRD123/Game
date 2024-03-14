@@ -34,73 +34,9 @@ h2
     margin-top: 40px;
 }
 
-/* Rock Paper Scizzor Game */
-
-#my-option, #rival-option{
-    height: 150px;
-    width: 150px;
-    margin-top: 20px;
-    
-}
-#my-option {
-    background-color: yellow; 
-}
 
 
-#rival-option {
-    background-color: red;
-}
 
-#options {
-    height: 100px;
-    width: 300px;
-    margin-top: 20px;
-    margin: 0 auto;
-}
-
-#options img {
-    height: 100px;
-    width: 100px;
-    background-color: blueviolet;
-}
-
-/* Tic Tac Toe Game */
-
-#panel {
-    height: 500px;
-    width: 500px;
-
-    /* To make it center */
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-}
-
-.tile {
-    height: 150px;
-    width: 150px;
-    font-size: 100px;
-
-    /* To make it center */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.horizontal-line {
-    border-bottom: 3px solid black;
-
-}
-
-.vertical-line {
-    border-right: 3px solid black;
-    
-}
-
-.winner {
-    color: blue;
-    background-color: cyan;
-}
 a>img:hover
 {
     cursor: pointer;
