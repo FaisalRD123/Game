@@ -1,56 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scizzor</title>
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="./css/rps.css"/>
+    <link rel="stylesheet" href="./css/color.css">
+  </head>
+  <body class="color-change-3x">
+    <h1>Rock Paper Scissors</h1>
+    <div class="choices">
+      <div class="choice" id="rock">
+        <img src="./images/rock.png" />
+      </div>
+      <div class="choice" id="paper">
+        <img src="./images/paper.png" />
+      </div>
+      <div class="choice" id="scissors">
+        <img src="./images/scissors.png" />
+      </div>
+    </div>
+
+    <div class="score-board">
+      <div class="score">
+        <p id="user-score">0</p>
+        <p>You</p>
+      </div>
+      <div class="score">
+        <p id="comp-score">0</p>
+        <p>Computer</p>
+      </div>
+    </div>
+
+    <div class="msg-container">
+      <p id="msg">Play your move</p>
+    </div>
+    <button class="home"><a href="index.html">HOMEPAGE</a></button>
     <script src="rockPaperScizzor.js"></script>
-
-
-</head>
-<body>
-
-    <h1>Rock Paper Scizzor</h1> 
-    <hr>
-    <br>
-    
-    <h2> Player Side</h2>
-    <img id="my-option">
-    <h2 id="my-points">Player: 0</h2>
-
-    <div id="options"></div>
-    
-    <h2 id="rival-points">CPU: 0</h2>
-    <img id="rival-option">
-    <h2> CPU Side</h2>
-    
-</body>
-
-<footer>
-    <!-- Social Media Links-->
-    <ul id="social-networks">
-     <li>
-         <a href="https://www.facebook.com/" target="_blank" rel="noopener"
-             aria-label="Visit our Facebook page (opens in a new tab)">
-             <i class="fa-brands fa-facebook"></i></a>
-     </li>
-     <li>
-         <a href="https://www.twitter.com/" target="_blank" rel="noopener"
-             aria-label="Visit our Twitter page (opens in a new tab)">
-             <i class="fa-brands fa-twitter-square"></i></a>
-     </li>
-     <li>
-         <a href="https://www.youtube.com/" target="_blank" rel="noopener"
-             aria-label="Visit our YouTube page (opens in a new tab)">
-             <i class="fa-brands fa-youtube-square"></i></a>
-     </li>
-     <li>
-         <a href="https://www.instagram.com/" target="_blank" rel="noopener"
-             aria-label="Visit our Instagram page (opens in a new tab)">
-             <i class="fa-brands fa-instagram"></i></a>
-     </li>
- </ul>
-
- </footer>
+  </body>
 </html>
