@@ -1,106 +1,100 @@
 body {
-    text-align: center;
-    font-weight: bold;
-    font-family:'Times New Roman', Times, serif;
+  text-align: center;
+  font-weight: bold;
+  font-family:'Times New Roman', Times, serif;
 }
 
 img{
-    height: 200px;
-    width: 200px;
-    border-radius: 180px;
+  height: 200px;
+  width: 200px;
+  border-radius: 180px;
 }
 @import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
 h1
 {
-    
-        font-family: "Madimi One", sans-serif;
-        font-weight: 800;
-        font-style: normal;
-        font-size: 3em;
-        border: 10px solid black;
-        color: white;
+  
+      font-family: "Madimi One", sans-serif;
+      font-weight: 800;
+      font-style: normal;
+      font-size: 3em;
+      border: 10px solid black;
+      color: white;
 }
 h2
 {
-    font-family: "Madimi One", sans-serif;
-        font-weight: 500;
-        font-style: normal;
-        font-size: 1.5em;
+  font-family: "Madimi One", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 1.5em;
 }
-
-
-
-#game2 {
-    margin-top: 40px;
-}
-
-
 
 
 a>img:hover
 {
-    cursor: pointer;
-    border: 4px solid rgb(251, 255, 0);
+  cursor: pointer;
+  border: 4px solid rgb(251, 255, 0);
 }
 .color-change-2x {
-	-webkit-animation: color-change-2x 2s linear infinite alternate both;
-	        animation: color-change-2x 2s linear infinite alternate both;
+-webkit-animation: color-change-2x 2s linear infinite alternate both;
+        animation: color-change-2x 2s linear infinite alternate both;
 }
- @-webkit-keyframes color-change-2x {
-    0% {
-      background: #19dcea;
-    }
-    100% {
-      background: #b22cff;
-    }
+@-webkit-keyframes color-change-2x {
+  0% {
+    background: #19dcea;
   }
-  @keyframes color-change-2x {
-    0% {
-      background: #19dcea;
-    }
-    100% {
-      background: #b22cff;
-    }
+  100% {
+    background: #b22cff;
   }
-  
+}
+@keyframes color-change-2x {
+  0% {
+    background: #19dcea;
+  }
+  100% {
+    background: #b22cff;
+  }
+}
 
-  /* Footer */
+
+/* Footer */
 footer, #footer {  
-    background-color: #d1f80f;
-    border: 3px solid black;
-    border-radius: 5%;
+  background-color: #d1f80f;
+  border: 3px solid black;
+  border-radius: 5%;
 }
 
 footer {
-    margin-top: 5px;
+  margin-top: 5px;
 }
 
 #footer {
-    margin-top: 75px;
+  margin-top: 75px;
 }
 
 #social-networks {
-    text-align: center;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
 }
 
 #social-networks i>a {
-    font-size: 250%;
-    padding: 5%;
-    color: #ffffff;
-    opacity: 0.8;
+  font-size: 250%;
+  padding: 5%;
+  color: #ffffff;
+  opacity: 0.8;
 }
 
 a {
-    color: black;
-    font-family: "Grape Nuts", cursive;
-    font-weight: 700;
-    font-style: normal;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px;
-    transition: all 0.5s ease;
+  color: black;
+  font-family: "Grape Nuts", cursive;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+  transition: all 0.5s ease;
 }
+
+ 
