@@ -1,55 +1,68 @@
-let me, rival;
-let myPoint = 0, rivalPoint = 0;
+let userScore = 0;
+let compScore = 0;
 
-let options = ['rock', 'paper', 'scizzor'];
+const choices = document.querySelectorAll(".choice");
+const msg = document.querySelector("#msg");
 
-window.onload = function () {  /* Function for putting images on the screen */
-    for (let i = 0; i <= 2; i++) {  /* Array for images*/
-        let option = document.createElement('img');
-        option.id = options[i];
-        option.src = options[i] + '.png';
+const userScorePara = document.querySelector("#user-score");
+const compScorePara = document.querySelector("#comp-score");
 
-        /* To append on clicking */
-        option.addEventListener('click', selectOption);
-        document.getElementById('options').append(option); /* Appending options */
+  // Ranndom choice
+const genCompChoice = () => {
+  const options = ["rock", "paper", "scissors"];
+  const randIdx = Math.floor(Math.random() * 3);
+  return options[randIdx];
+};
+
+
+// Draw Game 
+const drawGame = () => {
+  msg.innerText = "Game was Draw. Play again.";
+  msg.style.backgroundColor = "#081b31"; 
+};
+
+
+// Win condition for each player
+const showWinner = (userWin, userChoice, compChoice) => {
+  if (userWin) {
+    userScore++;
+    userScorePara.innerText = userScore;
+    msg.innerText = `You win! Your ${userChoice} beats ${compChoice}`;
+    msg.style.backgroundColor = "green";
+  } else {
+    compScore++;
+    compScorePara.innerText = compScore;
+    msg.innerText = `You lost. ${compChoice} beats your ${userChoice}`;
+    msg.style.backgroundColor = "red";
+  }
+};
+
+const playGame = (userChoice) => {
+  //Generate computer choice
+  const compChoice = genCompChoice();
+
+  if (userChoice === compChoice) {
+    //Draw Game
+    drawGame();
+  } else {
+    let userWin = true;
+    if (userChoice === "rock") {
+      //scissors, paper
+      userWin = compChoice === "paper" ? false : true;
+    } else if (userChoice === "paper") {
+      //rock, scissors
+      userWin = compChoice === "scissors" ? false : true;
+    } else {
+      //rock, paper
+      userWin = compChoice === "rock" ? false : true;
     }
-}
+    showWinner(userWin, userChoice, compChoice);
+  }
+};
 
-function selectOption() {
-    me = this.id;
-    document.getElementById('my-option').src = me + '.png';
-
-    /* Math.Floor to get a whole number */
-    rival = options[Math.floor(Math.random() * 3)];
-    document.getElementById('rival-option').src = rival + '.png';
-
-     /* Game logic */
-     if (me == 'paper') {
-        if (rival == 'rock'){
-            myPoint++;
-        }
-        else if (rival == 'scizzor') {
-            rivalPoint++;
-        }
-     }
-     else if (me == 'rock') {
-        if (rival == 'scizzor'){
-            myPoint++;
-        }
-        else if (rival == 'paper') {
-            rivalPoint++;
-        }
-     }
-     else if (me == 'scizzor') {
-        if (rival == 'paper'){
-            myPoint++;
-        }
-        else if (rival == 'rock') {
-            rivalPoint++;
-        }
-     }
-
-    /* Converting points to text */
-    document.getElementById('my-points').innerText = myPoint;
-    document.getElementById('rival-points').innerText = rivalPoint;
-}
+choices.forEach((choice) => {
+  choice.addEventListener("click", () => {
+    const userChoice = choice.getAttribute("id");
+    playGame(userChoice);
+  });
+});
