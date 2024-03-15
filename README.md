@@ -1,50 +1,42 @@
-Contents
-Introduction	2
-Project Goals	2
-Site Owner Goals	2
-Target Audience	3
-User requirements and Expectations	3
-First time user	3
-Returning User	3
-Site Owner	3
-Wire Frames	4
-Main Page	4
-1st Game Desktop page	4
-1st Game Ipad page	5
-1st Game Mini page	5
-2nd Game page	6
-Design	6
-Design Choices	6
-Colour	6
-Fonts	7
-Structure of the site	7
-Technologies used	7
-Frameworks and Tools	7
-Language used	8
-Features	8
-Navigation Bar	8
-The Landing Page	9
-1st Game	9
-How to play	9
-Rules	9
-2nd Game	10
-How to play	10
-Rules	10
-Validation	10
-HTML Validation	10
-CSS Validation	11
-Accessibility	12
-Performance	13
-Bugs	15
-Fixes	15
-Credits	15
-Images	15
-https://www.istockphoto.com/search/2/image-film?phrase=tic+tac+toe+board	16
-Fonts	16
-Colours	16
-Deployment	16
-Future Work	16
-Acknowledgements	16
+# Game Corner
+
+(Developer: Faisal)
+
+![Mockup image](/images/ticTacToe.webp)
+
+[Live webpage](https://faisalrd123.github.io/Anime-Project/)
+
+## Table of Content
+
+1. [Project Goals](#project-goals)
+    1. [User Goals](#user-goals)
+    2. [Site Owner Goals](#site-owner-goals)
+2. [User Experience](#user-experience)
+    1. [Target Audience](#target-audience)
+    2. [User Requrements and Expectations](#user-requrements-and-expectations)
+    3. [User Stories](#user-stories)
+3. [Design](#design)
+    1. [Design Choices](#design-choices)
+    2. [Colour](#colours)
+    3. [Fonts](#fonts)
+    4. [Structure](#structure)
+    5. [Wireframes](#wireframes)
+4. [Technologies Used](#technologies-used)
+    1. [Languages](#languages)
+    2. [Frameworks & Tools](#frameworks-&-tools)
+5. [Features](#features)
+6. [Testing](#validation)
+    1. [HTML Validation](#HTML-validation)
+    2. [CSS Validation](#CSS-validation)
+    3. [Accessibility](#accessibility)
+    4. [Performance](#performance)
+    5. [Device testing](#performing-tests-on-various-devices)
+    6. [Browser compatibility](#browser-compatability)
+    7. [Testing user stories](#testing-user-stories)
+8. [Bugs](#Bugs)
+9. [Deployment](#deployment)
+10. [Credits](#credits)
+11. [Acknowledgements](#acknowledgements)
 
 
 Introduction
