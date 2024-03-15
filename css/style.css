@@ -14,13 +14,12 @@ img{
 
 h1
 {
-    
-        font-family: "Madimi One", sans-serif;
-        font-weight: 800;
-        font-style: normal;
-        font-size: 3em;
-        border: 10px solid black;
-        color: white;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 3em;
+    border: 10px solid black;
+    color: white;
 }
 h2
 {
@@ -30,12 +29,13 @@ h2
         font-size: 1.5em;
 }
 
-
+/* Hover effect*/
 a>img:hover
 {
     cursor: pointer;
     border: 4px solid rgb(251, 255, 0);
 }
+
 .color-change-2x {
 	-webkit-animation: color-change-2x 2s linear infinite alternate both;
 	        animation: color-change-2x 2s linear infinite alternate both;

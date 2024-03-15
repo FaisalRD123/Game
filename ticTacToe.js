@@ -18,6 +18,7 @@ const winPatterns = [
   [6, 7, 8],
 ];
 
+// Reset Game
 const resetGame = () => {
   turnO = true;
   count = 0;

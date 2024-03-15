@@ -84,6 +84,7 @@ img {
   border-radius: 5px;
   margin-top: 5px;
 }
+
 .home>a
 {
   text-decoration: none;
@@ -91,6 +92,7 @@ img {
   font-size: 1.3em;
   font-weight: 800;
 }
+
 .home>a:hover
 {
   color: #fff;
