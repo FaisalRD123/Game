@@ -2,7 +2,7 @@
 
 (Developer: Faisal)
 
-![Mockup image](/images/ticTacToe.webp)
+![Mockup image](/images/ticTacToe.png)
 
 [Live webpage](https://faisalrd123.github.io/Anime-Project/)
 
@@ -90,17 +90,17 @@ Site Owner
 
 Wire Frames
 Main Page
- 
+ <img src="/docs/wireframes/mainPage.PNG">
 1st Game Desktop page
- 
+ <img src="/docs/wireframes/rps_desktop.PNG">
 1st Game Ipad page
- 
+ <img src="/docs/wireframes/rps_tablet.PNG">
 1st Game Mini page
- 
+ <img src="/docs/wireframes/rps_mini.PNG">
 
 
 2nd Game page
- 
+ <img src="/docs/wireframes/ttt.PNG">
 
 
 Design
