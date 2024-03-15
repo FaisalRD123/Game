@@ -290,13 +290,13 @@ The results can be seen below:
 
 Bugs
 
-1-	External links opening on the same page.
-2-	Homepage link wasn’t working properly. Fixed.
+* External links opening on the same page.
+* Homepage link wasn’t working properly. Fixed.
 
 Fixes
 
-1-	Added “target = _blank” to open in a new tab.
-2-	Created the link outside of the button.
+* Added “target = _blank” to open in a new tab.
+* Created the link outside of the button.
 
 Credits
 
