@@ -4,7 +4,7 @@
 
 ![Mockup image](/images/ticTacToe.png)
 
-[Live webpage](https://faisalrd123.github.io/Game_Corner/)
+[Live webpage](https://faisalrd123.github.io/Game/)
 
 ## Table of Content
 
@@ -334,7 +334,7 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 * Source: deploy from branch. The branch should be main and folder was root.
 * Go to codes, on the right side, click GitHub-pages.
 
-The live link can be found here - https://faisalrd123.github.io/Game_Corner/
+The live link can be found here - https://faisalrd123.github.io/Game/
 
 Future Work
 
