@@ -92,24 +92,24 @@ I work hard to offer a wide variety of games on our gaming website to suit every
 
 ### Main Page
 
- <img src="/docs/wireframes/mainPage.PNG">
+ <img src="assets/docs/wireframes/mainPage.PNG">
 
 ### 1st Game Desktop page
 
- <img src="/docs/wireframes/rps_desktop.PNG">
+ <img src="assets/docs/wireframes/rps_desktop.PNG">
 
 ### 1st Game Ipad page
 
- <img src="/docs/wireframes/rps_tablet.PNG">
+ <img src="assets/docs/wireframes/rps_tablet.PNG">
 
 ### 1st Game Mini page
 
- <img src="/docs/wireframes/rps_mini.PNG">
+ <img src="assets/docs/wireframes/rps_mini.PNG">
 
 
 ## 2nd Game page
 
- <img src="/docs/wireframes/ttt.PNG">
+ <img src="assets/docs/wireframes/ttt.PNG">
 
 
 # Design
@@ -164,15 +164,15 @@ The structure of my site is very easy to follow, creative and user friendly.
 
 ### Nav Bar 1
 
- <img src="/docs/pics/main.PNG">
+ <img src="assets/docs/pics/main.PNG">
 
 ### Nav Bar 2
 
-  <img src="/docs/pics/rps_normal.PNG">
+  <img src="assets/docs/pics/rps_normal.PNG">
 
 ### Nav Bar 3
 
-  <img src="/docs/pics/tictactoe.PNG">
+  <img src="assets/docs/pics/tictactoe.PNG">
 
 ## The Landing Page 
 
@@ -216,15 +216,15 @@ For HTML code checking, I used HTML checker as recommended by code institute the
 
 ### Main Page HTML
 
-<img src="/docs/checker/index_html_checker.PNG">
+<img src="assets/docs/checker/index_html_checker.PNG">
 
 ### 1st game HTML
 
-<img src="/docs/checker/rps_html_checker.PNG">
+<img src="assets/docs/checker/rps_html_checker.PNG">
  
 ### 2nd game HTML
 
-<img src="/docs/checker/ttt_html_checker.PNG">
+<img src="assets/docs/checker/ttt_html_checker.PNG">
  
 
 ## CSS Validation
@@ -233,20 +233,20 @@ For CSS checking, I used CSS checker as recommended by code institute themselves
 
 ### Style CSS
  
- <img src="/docs/checker/style_css_checker.PNG">
+ <img src="assets/docs/checker/style_css_checker.PNG">
  
 
 ### Rps CSS
  
- <img src="/docs/checker/rps_css_checker.PNG">
+ <img src="assets/docs/checker/rps_css_checker.PNG">
 
 ### Ttt CSS
  
- <img src="/docs/checker/ttt_css_checker.PNG">
+ <img src="assets/docs/checker/ttt_css_checker.PNG">
 
 ### Color CSS
 
- <img src="/docs/checker/color_css_checker.PNG">
+ <img src="assets/docs/checker/color_css_checker.PNG">
 
  ## JavaScript Checker
 
@@ -254,11 +254,11 @@ For CSS checking, I used CSS checker as recommended by code institute themselves
 
  ### Rock Paper Scissor Java Script
 
- <img src="/docs/checker/rps_java_checker.PNG">
+ <img src="assets/docs/checker/rps_java_checker.PNG">
 
  ### Tic Tac Toe Java Script
 
- <img src="/docs/checker/ttt_java_checker.PNG">
+ <img src="assets/docs/checker/ttt_java_checker.PNG">
 
 ## Accessibility
 
@@ -266,7 +266,7 @@ For evaluation, I used WAVW WebAIM web accessibility evaluation tool. As seen in
 
 ### Full website Wave
  
-<img src="/docs/wave/main_page_wave.PNG">
+<img src="assets/docs/wave/main_page_wave.PNG">
 
 ## Performance
 
@@ -276,15 +276,15 @@ The results can be seen below:
 
 ### Main Page performance
 
- <img src="/docs/performance/main_page_performance.PNG">
+ <img src="assets/docs/performance/main_page_performance.PNG">
  
 ### Game 1 Performance
  
- <img src="/docs/performance/rps_performance.PNG">
+ <img src="assets/docs/performance/rps_performance.PNG">
 
 ### Game 2 Performance
  
- <img src="/docs/performance/game2_performance.PNG">
+ <img src="assets/docs/performance/game2_performance.PNG">
 
 
 
