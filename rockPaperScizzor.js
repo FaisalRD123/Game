@@ -14,13 +14,11 @@ const genCompChoice = () => {
   return options[randIdx];
 };
 
-
 // Draw Game 
 const drawGame = () => {
   msg.innerText = "Game was Draw. Play again.";
   msg.style.backgroundColor = "#081b31"; 
 };
-
 
 // Win condition for each player
 const showWinner = (userWin, userChoice, compChoice) => {
