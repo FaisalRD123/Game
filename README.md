@@ -39,19 +39,19 @@
 11. [Acknowledgements](#acknowledgements)
 
 
-Introduction
+***Introduction
 
 Greetings from my tiny gaming website, where you may have endless fun! Prepare yourself for an exciting voyage that will be both challenging and exhilarating. I have something to offer everyone, whether you're a casual player looking for a brief diversion or a die-hard fanatic searching for a fresh challenge. 
 
 I work hard to offer a wide variety of games on our gaming website to suit every taste and inclination. My selection is always changing to keep you interested and delighted, ranging from timeless favorites to cutting-edge independent jewels.
 
-Project Goals
+**Project Goals
 
 * Creating a website where the users can find all kind of different mini video games.
 * Cool backgrounds.
 * Extra attention to different hovering effect to make it cooler and appealing to the new users.
 
-Site Owner Goals 
+**Site Owner Goals 
  
 * Increase the number of daily users visiting the site.
 * Try to capture global audience.
@@ -59,70 +59,84 @@ Site Owner Goals
 
 
 
-Target Audience
+**Target Audience
 
 * People looking for fun and entertainment.
 * Mostly teenagers as they contained the most targeted audience.
 
-User requirements and Expectations
+**User requirements and Expectations
 
 * A simple and easy to use UI so people don't get lost.
 * Functions and links that should work as expected.
 * Accessibility and good communication system.
 * Shall look good on all kind of user screens.
 
-First time user
+**First time user
 
 * As a first time user, I want the site simple and easy to navigate.
 * As a first time user, I want the links to open in a new page.
 * As a first time user, I want the site to look appealing.
 
-Returning User
+**Returning User
 
 * As a returning user, I want small improvements over time.
 * As a returning user, I expect the site to have more games over time.
 * As a returning user, I want to see star ratings and user ratings to help me decide about different video games.
 
-Site Owner
+**Site Owner
 
 * As a site owner, I want users to find new and exciting games over time.
 * As a site owner, I want a communication between us and the users.
 
-Wire Frames
+**Wire Frames
+
 Main Page
+
  <img src="/docs/wireframes/mainPage.PNG">
+
 1st Game Desktop page
+
  <img src="/docs/wireframes/rps_desktop.PNG">
+
 1st Game Ipad page
+
  <img src="/docs/wireframes/rps_tablet.PNG">
+
 1st Game Mini page
+
  <img src="/docs/wireframes/rps_mini.PNG">
 
 
 2nd Game page
+
  <img src="/docs/wireframes/ttt.PNG">
 
 
-Design
-Design Choices
+***Design
+
+**Design Choices
+
 The website is designed in such a way to make users feel excited and pump. The design has been kept simple and easy to use without providing much distraction.
 
-Colour
+**Colour
 The colour scheme for my site is mostly bright yet simple with not many color contrast.
 The color are chosen from mostly cooler color contrast as it has a wide range of colors available.
 
  
 
-Fonts
+**Fonts
 Fonts were taken from google font. 
-Structure of the site
+
+**Structure of the site
+
 The structure of my site is very easy to follow, creative and user friendly.
 * The main page consists of two main sections; body (texts and game links) and footer (social media links).
 * The 2nd page contains the rock paper scissor game.
 * The 3rd page contains the tic tac toe game.
-Technologies used
 
-Frameworks and Tools
+***Technologies used
+
+**Frameworks and Tools
 
 * Visual Studio Code
 * Git
@@ -133,25 +147,26 @@ Frameworks and Tools
 * Wavw evaluation
 
 
-Language used
+**Language used
 
 *CSS
 *HTML
 *Java Script
 
-Features
+***Features
 
-Navigation Bar
+**Navigation Bar
 
 * Featured on all three pages, the full responsive navigation bar includes links to the Home and the other 2 games. All pages are simple and easy to navigate.
-Nav Bar 1
- 
 
+Nav Bar 1
+ <img src="/docs/pics/main.PNG">
 
 Nav Bar 2
- 
+  <img src="/docs/pics/rps_normal.PNG">
+
 Nav Bar 3
- 
+  <img src="/docs/pics/tictactoe.PNG">
 
 The Landing Page 
 
