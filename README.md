@@ -318,16 +318,18 @@ The colours were taken from https://coolors.co/.
 YouTube Tutorials
 
 The following tutorial helped me give an idea how to create these games.
-https://www.youtube.com/watch?v=fIBOydve2f8&list=PLnKe36F30Y4bLhA-st9sC4ZthyV7nsL2Q&index=18
-https://www.youtube.com/watch?v=AzvpHNkjqsg&list=PLnKe36F30Y4bLhA-st9sC4ZthyV7nsL2Q&index=17
+
+* https://www.youtube.com/watch?v=fIBOydve2f8&list=PLnKe36F30Y4bLhA-st9sC4ZthyV7nsL2Q&index=18
+
+* https://www.youtube.com/watch?v=AzvpHNkjqsg&list=PLnKe36F30Y4bLhA-st9sC4ZthyV7nsL2Q&index=17
 
 
 Deployment
 The site was deployed to GitHub pages. The steps to deploy are as follows:
-•	In the GitHub repository, go to the Settings tab.
-•	In the Generals section, go to Pages.
-•	Source: deploy from branch. The branch should be main and folder was root.
-•	Go to codes, on the right side, click GitHub-pages.
+* In the GitHub repository, go to the Settings tab.
+* In the Generals section, go to Pages.
+* Source: deploy from branch. The branch should be main and folder was root.
+* Go to codes, on the right side, click GitHub-pages.
 
 The live link can be found here - 
 
@@ -339,4 +341,4 @@ Animations made the website quite slow. Better implementation of animations will
 Acknowledgements
 
 Last but not least, I would like to thank the following people who helped me achieve this achievement.
-•	Mo Shami, my mentor, who gave me advice, support and feedback throughout the project.
+* Mo Shami, my mentor, who gave me advice, support and feedback throughout the project.
