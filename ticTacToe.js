@@ -62,7 +62,6 @@ const disableBoxes = () => {
   }
 };
 
-
 const enableBoxes = () => {
   for (let box of boxes) {
     box.disabled = false;
