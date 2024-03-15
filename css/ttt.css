@@ -46,7 +46,7 @@
     border: none;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
     font-size: 8vmin;
-    color: #e8f805;
+    color: #f81105;
     background-color: #ffffc7;
   }
   
@@ -54,7 +54,7 @@
     padding: 1rem;
     font-size: 1.25rem;
     background-color: #000000;
-    color: #f5f104;
+    color: #f50404;
     border-radius: 1rem;
     border: none;
   }
@@ -69,7 +69,7 @@
   }
   
   #msg {
-    color: #ffffc7;
+    color: #eb230c;
     font-size: 5vmin;
   }
   
@@ -111,7 +111,7 @@
     padding: 1rem;
     font-size: 1.25rem;
     background-color: #191913;
-    color: #ebf305;
+    color: #db190b;
     border-radius: 1rem;
     border: none;
   }
