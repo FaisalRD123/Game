@@ -2,7 +2,7 @@
 
 (Developer: Faisal)
 
-![Mockup image](/images/ticTacToe.png)
+![Mockup image](assets/images/ticTacToe.png)
 
 [Live webpage](https://faisalrd123.github.io/Game/)
 
