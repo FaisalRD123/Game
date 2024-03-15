@@ -1,17 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="ticTacToe.js"></script>
-</head>
-<body>
-    <h1>Tic Tac Toe</h1> 
-    <hr id="horizontalRow">
-    <br>
+    <title>Tic-Tac-Toe Game</title>
 
-    <div id="panel"></div>
-</body>
+     <!-- Meta tags for search engines -->
+     <meta name="description" content="Games. Entertainment. Enjoyment. Fun. tic. tac. toe">
+     <meta name="keywords" content="time pass, games, battles, fun, play, tictactoe">
+ 
+     <!-- links -->
+    <link rel="stylesheet" href="./css/ttt.css">
+  </head>
+
+  <!-- Body -->
+  <body>
+    <div class="msg-container hide">
+      <p id="msg">Winner</p>
+      <button id="new-btn">New Game</button>
+    </div>
+    <main>
+      <h1>Tic Tac Toe</h1>
+      <div class="container">
+        <div class="game">
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+        </div>
+      </div>
+
+       <!-- Reset Game Button -->
+      <button id="reset-btn">Reset Game</button>
+
+       <!-- Link to home page -->   
+        <span > <a href="index.html" class="button_top">Homepage</a>
+        </span>
+    </main>
+
+    <!-- Link to Java Script file -->
+    <script src="ticTacToe.js"></script>
+  </body>
 </html>
