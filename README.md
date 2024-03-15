@@ -233,7 +233,7 @@ For CSS checking, I used CSS checker as recommended by code institute themselves
 
 ### Style CSS
  
- <img src="/docs/checker/html_css_checker.PNG">
+ <img src="/docs/checker/style_css_checker.PNG">
  
 
 ### Rps CSS
